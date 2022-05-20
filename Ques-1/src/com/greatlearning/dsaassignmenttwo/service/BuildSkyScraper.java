@@ -11,7 +11,7 @@ public class BuildSkyScraper {
  			if (sequence[i] == currentfloor){
 			 System.out.println("Day: "+ (day+1));
 				check.push(sequence[i]);
-				while(!check.isEmpty() && check.peek()> 0 && check.peek() >= currentfloor ){
+				while(!check.isEmpty() && check.peek() >= currentfloor && currentfloor> 0 ){
 					System.out.print(check.pop()+ " ");
 					currentfloor--;
 				}
